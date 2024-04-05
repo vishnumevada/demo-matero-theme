@@ -1,0 +1,38 @@
+<page-header></page-header>
+
+<div mat-dialog-title>
+  <h4 class="text-center">Add New Product </h4>
+</div>
+<hr>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+      <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Product name:</mat-label>
+              <input matInput type="text" placeholder="i.e Rustic Rubber Shirt" formControlName="title">
+          </mat-form-field>
+      </div>
+      <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Price:</mat-label>
+              <input matInput type="number" placeholder="i.e 200" formControlName="price">
+          </mat-form-field>
+      </div>
+      <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Description:</mat-label>
+              <input matInput type="text" placeholder="i.e Description" formControlName="description">
+          </mat-form-field>
+      </div>
+      <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Image URL:</mat-label>
+              <input matInput type="text" placeholder="i.e Image URL" formControlName="image">
+          </mat-form-field>
+      </div>
+  </div>
+  <div mat-dialog-actions class="action-btns">
+      <button style="margin: 10px;" mat-raised-button color="primary" type="submit">Create</button>
+      <button mat-raised-button type="button" color="warn">Cancel</button>
+  </div>
+</form>

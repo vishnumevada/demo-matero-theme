@@ -77,7 +77,11 @@
     "permissions": "Permissions",
     "permissions.role-switching": "Role Switching",
     "permissions.route-guard": "Route Guard",
-    "permissions.test": "Permission Test"
+    "permissions.test": "Permission Test",
+    "admin": "Users",
+    "admin.user-list": "User List",
+    "admin.user-add": "Add User",
+    "admin.user-data-dump": "User Data Dump"
   },
   "validations": {
     "required": "This field is required",

@@ -10,10 +10,10 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-user-panel',
   template: `
     <div class="matero-user-panel">
-      <img class="matero-user-panel-avatar" [src]="user.avatar" alt="avatar" width="64" />
+      <img class="matero-user-panel-avatar" [src]="user.avatar" alt="avatar" width="50" />
       <h4 class="matero-user-panel-name">{{ user.name }}</h4>
-      <h5 class="matero-user-panel-email">{{ user.email }}</h5>
-      <div class="matero-user-panel-icons">
+      <!-- <h5 class="matero-user-panel-email">{{ user.email }}</h5> -->
+      <!-- <div class="matero-user-panel-icons">
         <button
           mat-icon-button
           routerLink="/profile/overview"
@@ -31,7 +31,7 @@ import { TranslateModule } from '@ngx-translate/core';
         <button mat-icon-button (click)="logout()" matTooltip="{{ 'logout' | translate }}">
           <mat-icon>exit_to_app</mat-icon>
         </button>
-      </div>
+      </div> -->
     </div>
   `,
   styleUrls: ['./user-panel.component.scss'],

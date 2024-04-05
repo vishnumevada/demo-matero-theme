@@ -4,11 +4,100 @@
       "route": "dashboard",
       "name": "dashboard",
       "type": "link",
-      "icon": "dashboard",
-      "badge": {
-        "color": "red-500",
-        "value": "5"
+      "icon": "dashboard"
+    },
+    {
+      "route": "admin",
+      "name": "admin",
+      "type": "sub",
+      "icon": "supervised_user_circle",
+      "children": [
+        {
+          "route": "list",
+          "name": "user-list",
+          "type": "link"
+        },
+        {
+          "route": "add",
+          "name": "user-add",
+          "type": "link"
+        },
+        {
+          "route": "data-dump",
+          "name": "user-data-dump",
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "route": "forms",
+      "name": "forms",
+      "type": "sub",
+      "icon": "description",
+      "children": [
+        {
+          "route": "elements",
+          "name": "form-elements",
+          "type": "link"
+        },
+        {
+          "route": "dynamic",
+          "name": "dynamic-form",
+          "type": "link"
+        },
+        {
+          "route": "select",
+          "name": "select",
+          "type": "link"
+        },
+        {
+          "route": "datetime",
+          "name": "datetime",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "except": "GUEST"
       }
+    },
+    {
+      "route": "tables",
+      "name": "tables",
+      "type": "sub",
+      "icon": "format_line_spacing",
+      "children": [
+        {
+          "route": "kitchen-sink",
+          "name": "kitchen-sink",
+          "type": "link"
+        },
+        {
+          "route": "remote-data",
+          "name": "remote-data",
+          "type": "link"
+        }
+      ],
+      "permissions": {
+        "except": "GUEST"
+      }
+    },
+    {
+      "route": "profile",
+      "name": "profile",
+      "type": "sub",
+      "icon": "person",
+      "children": [
+        {
+          "route": "overview",
+          "name": "overview",
+          "type": "link"
+        },
+        {
+          "route": "settings",
+          "name": "settings",
+          "type": "link"
+        }
+      ]
     },
     {
       "route": "/",

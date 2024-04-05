@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+## Some Important Commands 
+
+How to setup ng matero theme
+
+https://github.com/ng-matero/ng-matero/tree/16.2.x
+
+npx @angular/cli@16.2.0 new demo-matero-theme
+angular v 16.2.0
+ng add ng-matero@16.x.x
+
+Genetare module
+ng g ng-matero:module abc
+
+Genarate components
+ng g ng-matero:page def -m=abc

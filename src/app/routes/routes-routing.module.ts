@@ -24,6 +24,10 @@ const routes: Routes = [
       { path: '403', component: Error403Component },
       { path: '404', component: Error404Component },
       { path: '500', component: Error500Component },
+      { path: 'forms', loadChildren: () => import('./forms/forms.module').then(m => m.FormsModule) },
+      { path: 'admin', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
+      { path: 'tables', loadChildren: () => import('./tables/tables.module').then(m => m.TablesModule) },
+      { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) },
     ],
   },
   {

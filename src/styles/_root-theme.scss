@@ -26,7 +26,7 @@
       --code-border-color: #{rgba(mat.get-color-from-palette($foreground, secondary-text), .08)};
       --code-background-color: #{rgba(mat.get-color-from-palette($foreground, secondary-text), .04)};
       --sidemenu-heading-hover-background-color: #{mat.get-color-from-palette($background, hover)};
-      --sidemenu-active-heading-text-color: #{if($is-dark-theme, mat.get-color-from-palette(mat.$blue-palette, 200), mat.get-color-from-palette($accent))};
+      --sidemenu-active-heading-text-color: #{if($is-dark-theme, mat.get-color-from-palette(mat.$blue-palette, 200), mat.get-color-from-palette($primary))};
       --sidemenu-active-heading-background-color: #{if($is-dark-theme, rgba(mat.get-color-from-palette($primary), .15), transparent)};
       --sidemenu-active-heading-hover-background-color: #{mat.get-color-from-palette($background, hover)};
       --sidemenu-expanded-background-color: #{mat.get-color-from-palette($background, hover)};
